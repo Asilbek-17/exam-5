@@ -106,13 +106,14 @@ elBtn.addEventListener("click", function(evt){
                 elTitleQuestion.textContent = a[0].symbol_title;
                 elTitleQuestion.dataset.id = a[0].id;
                 a.splice(0 , 1);
-                scoreOne++
+                scoreOne += 2;
                 elScoreOneText.textContent = `Score : ${scoreOne}`;
                 i++
                 if(i == (Number(elSelectLevel.value))) {
-                    elModal.innerHTML = " ";
-                    elModal.classList.add("win") 
-                    elModal.innerHTML = `<button class="replay"><img width="100" height="100" src="./images/replay1.svg"></button>`;
+                    elBox.innerHTML = " ";
+                    elBox.classList.add("win");
+                    elTime.style.display = "none";
+                    elBox.innerHTML = `<button class="replay"><img width="100" height="100" src="./images/replay1.svg"></button>`;
                     const replayBtn = document.querySelector(".replay") ;
                     
                     replayBtn.addEventListener("click", function (){
@@ -128,9 +129,10 @@ elBtn.addEventListener("click", function(evt){
                     target.style.backgroundColor = "transparent";
                 }, "1000") ;
                 if(attemp == 0) {
-                    elModal.innerHTML = " ";
-                    elModal.classList.add("lose") 
-                    elModal.innerHTML = `<button class="replay2"><img width="100" height="100" src="./images/replay1.svg"></button>`;
+                    elBox.innerHTML = " ";
+                    elBox.classList.add("lose");
+                    elTime.style.display = "none";
+                    elBox.innerHTML = `<button class="replay2"><img width="100" height="100" src="./images/replay1.svg"></button>`;
                     const replayBtn = document.querySelector(".replay2") ;
                     
                     replayBtn.addEventListener("click", function (){
