@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", "Arial", sans-serif;
+  background-image: url("./images/You\ win.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.js-form {
+  margin-top: 200px;
+}
+
+.modall {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-image: url("./images/You\ win.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.green .item {
+  background-color: green !important;
+}
+
+.win {
+  display: block !important;
+  background-image: url("./images/youWin.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px 1000px;
+}
+
+.lose {
+  display: block !important;
+  background-image: url("./images/gameover.jpeg");
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  background-size: cover;
+}
+
+.time {
+  width: 197px;
+}
+
+.not {
+  background-color: transparent !important;
+}
+
+.replay {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+}
+
+.replay2 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+}
+
+.red .item {
+  background-color: red;
+}
+
+.item-red {
+  background-color: rgb(199, 6, 6);
+  background-image: url("./images/error.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding: 30px;
+  background-size: cover;
+}
